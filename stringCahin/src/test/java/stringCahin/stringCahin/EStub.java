@@ -1,10 +1,6 @@
 package stringCahin.stringCahin;
 
-public class BStub extends B {
-	
-	public BStub() {
-		super(null);
-	}
+public class EStub extends E {
 	
 	@Override
 	public String process(String prefix) {

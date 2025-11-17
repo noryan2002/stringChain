@@ -5,18 +5,12 @@ import org.junit.Test;
 
 public class Integration_A_BTest {
 
-    @Test
-    public void testIntegration_AtoB_withCStub() {
-        // Arrange:
-        CStub cStub = new CStub();     // stub replaces C
-        B realB = new B(cStub);        // real B
-        A realA = new A(realB);        // real A
-tt
-        
-        // Act: aka
-        String result = realA.process("");
-
-        // Assert:
-        assertEquals("HE", result);
-    }
+	@Test
+	public void testIntegration_AtoB_withCStub() {
+		CStub cStub = new CStub();
+		B realB = new B(cStub);
+		A realA = new A(realB);
+		String result = realA.process("");
+		assertEquals("HE", result);
+	}
 }
