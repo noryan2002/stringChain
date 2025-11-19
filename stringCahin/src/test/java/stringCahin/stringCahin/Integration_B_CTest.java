@@ -10,8 +10,8 @@ public class Integration_B_CTest {
 		DStub dStub = new DStub();
 		C realC = new C(dStub);
 		B realB = new B(realC);
-		String result = realB.process("");
-		assertEquals("E", result);
+		String result = realB.process("H");
+		assertEquals("HEL", result);
 	}
 }
 
