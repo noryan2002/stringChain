@@ -22,4 +22,16 @@ public class systemTest {
 		String result = a.process("");
 		assertEquals("HE", result);
 	}
+	Public void testSystm_negative(){
+		
+		E e = new E();
+		D d = new D(e);
+		C c = new C(d);
+		B b = new B(c);
+		A a = new A(b);
+		String initialInput = "123";
+		String result = a.process(initialInput);
+		assertEquals("123HELLO", result);
+	}
+	
 }
